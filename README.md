@@ -92,7 +92,8 @@ gcc -o badger-trap badger-trap.c
   ./badger-trap name
   ```
   - There is one more way of running BadgerTrap. This requires changes to the program. This is helpful when you want to skip the initialization phase of the program and then start tracking TLB misses. You can introduce this line in your code.
-   ```syscall(314,NULL,0,0)
+   ```
+   syscall(314,NULL,0,0)
    ```
   For more information on the syscall, please look at mm/badger-trap.c in linux source. 
 
